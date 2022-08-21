@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link rel="icon" href="images/Vector3.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ccs/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    
+</head>
+<body>
+    
+    <header>
+      <div id="headerImg"><a href="index.html"><img src="images/Vector1.png" alt="Logo"></a></div>
+      <div id="headerH2">Encriptador</div>
+    </header>
+
+    <section>  
+      <article id="art1">
+        <h1>Escribe lo que quieras encriptar...</h1>
+        <textarea name="toencrypt" id="toEncrypt" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+
+        <div class="buttons">
+            <div class="tooltip info">
+                <span class="tooltipText in">
+                    <ul>    
+                        <li>- Si introduce mayúscula, será cambiada a minúscula.</li>
+                        <li>- Si introduce caracteres especiales, serán eliminados.</li>
+                        <li>- Si introduce acentos, serán eliminados.</li>
+                    </ul>           
+                </span>
+                <i class="fa-solid fa-circle-info"><span class="icon">Tener en cuenta lo siguiente:</span></i>
+            </div>
+            <button id="btn1" onclick="getValueInput();">Encriptar</button>
+            <button id="btn2" onclick="getValueEncrypted();">Desencriptar</button>
+        </div>
+      </article>
+
+      <aside id="asi1">
+          <h2>Ningún mensaje fue encontrado</h2>
+          
+          <div id="asideContent">
+            <img id="img1" src="images/muneco1.png" alt="Muñeco">
+            <div id="encrypted">Ingresa el texto que desees encriptar o desencriptar</div>
+            <textarea name="encryptedT" id="encryptedT" cols="30" rows="10" disabled></textarea>
+          </div>
+
+          <div id="buttons2">
+            <button id="btn3" onclick="copyText();">Copiar</button>
+          </div>
+      </aside>
+    </section>
+
+    <footer>
+      <p>© Copyright 2015 by Harold Marcano. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
