@@ -1,4 +1,5 @@
 //**********************************ALERTAS***************************************** */
+document.getElementById("toEncrypt").focus();
 
 Swal.fire({
     title: '<strong>Importante</strong>',
