@@ -6,7 +6,7 @@ Swal.fire({
     icon: 'info',
     html:
         '<ul>  ' +  
-            '<li>- Las mayúscula serán cambiada a minúscula.</li>'+
+            '<li>- Las mayúsculas serán cambiadas a minúsculas.</li>'+
             '<li>- Los caracteres especiales serán eliminados.</li>'+
             '<li>- Los acentos serán eliminados.</li>'+
         '</ul> ',
