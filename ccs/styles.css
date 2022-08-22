@@ -6,10 +6,7 @@
 
 body {
   font-family: 'Lucida Sans Unicode';
-  background-image: url(../images/Vector3.png);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
+  background-image: url(../images/backg2.webp);
 }
 
 header {
@@ -58,15 +55,15 @@ h1{
 article {
   margin-top: 20px;
   flex: 0 0 50%; 
-  background: rgba(213, 235, 253, 0.5);
+  background: rgba(137, 196, 244, 0.3);
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
               0px 2px 4px rgba(0,0,0,0.1), 
               0px 4px 8px rgba(0,0,0,0.1), 
               0px 8px 16px rgba(0,0,0,0.1);
   border-radius: 2em / 3em;
   padding: 10px;
-  color: #0A3871;
-  height: 470px; 
+  color: white;
+  height: 650px; 
 }
 
 #toEncrypt{
@@ -89,7 +86,7 @@ article {
   text-align: center;
 }
 
-#btn1, #btn2, #btn3 {
+#btn1, #btn2, #btn3{
   background-color: white;
   border: none;
   border-radius: 14px;
@@ -102,6 +99,10 @@ article {
   width: 200px;
   box-shadow: -5px -5px 15px rgba(164, 199, 252, 0.5),
               10px 10px 15px rgba(61, 61, 61, 0.12);
+}
+
+#btn3{
+  width: 150px;
 }
 
 #btn2:hover, #btn3:hover{
@@ -120,7 +121,7 @@ article {
 }
 
 aside{
-  background: rgba(213, 235, 253, 0.7);
+  background: rgba(137, 196, 244, 0.3);
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1), 
               0px 2px 4px rgba(0,0,0,0.1), 
               0px 4px 8px rgba(0,0,0,0.1), 
@@ -130,14 +131,15 @@ aside{
   padding: 10px;
   margin-top: 20px;
   color:  #0A3871;
-  height: 470px;
+  height: 650px;
   text-align: center;
 }
 
 h2{
     font-size: 22px;
     margin-bottom: 5px;
-    background: rgba(213, 235, 253, 0.2);
+    margin-top: 10px;
+    color: white;
 }
 
 #img1{
@@ -148,7 +150,7 @@ h2{
 #encrypted{
     font-size: 18x;
     overflow-wrap: anywhere;
-    color: black;
+    color: #0A3871;
 }
 
 #encryptedT{
@@ -156,7 +158,7 @@ h2{
   font-size: 18px;
   width: 100%;
   border-style: none;
-  height: 320PX;
+  height: 420PX;
   padding: 15px;
   opacity: 0.6;
   border-style: none;
@@ -259,7 +261,18 @@ ul{
     margin: 5px;
     text-align: center;
   }
+
+  #encryptedT{
+    height: 420px;
+  }
+
+  #img1{
+    margin: 30px;
+    width: 80%;
+    height: 70%;
+  }
 }
+
 
 @media (max-width: 709px) {
   .buttons{
@@ -270,6 +283,12 @@ ul{
   #toEncrypt{
     height: 55%;
   }
+
+  #img1{
+    margin: 30px;
+    width: 80%;
+    height: 70%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -279,6 +298,10 @@ ul{
 
   #headerH2{
     font-size: 1.1em;
+  }
+
+    #encryptedT{
+    height: 55%;
   }
 
   section {
