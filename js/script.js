@@ -135,5 +135,7 @@ const copyText = () =>{
             );
         });
       }
-    });  
+    });
+    document.getElementById('toEncrypt').value = '';
+    document.getElementById("toEncrypt").focus();
 }
